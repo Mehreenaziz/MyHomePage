@@ -66,3 +66,22 @@ test("There are at least 500 words on the page", () => {
 
 const console = document.getElementById("tests");
 prettify.toHTML(run(), console);
+
+var pics;
+
+// Describe this function...
+function forward() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  pics.push(pics.shift());
+}
+
+// Describe this function...
+function backward() {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  pics.unshift(pics.pop());
+}
+
+
+pics = ['https://image.shutterstock.com/image-photo/behrai-kabab1-600w-154637972.jpg', 'https://image.shutterstock.com/image-photo/chicken-biryani-showing-leg-piece-600w-353098577.jpg', 'https://image.shutterstock.com/image-photo/samosa-on-plate-sauce-tomatoes-600w-255644446.jpg', 'https://image.shutterstock.com/image-photo/closeup-mince-paratha-600w-84751744.jpg', 'https://image.shutterstock.com/image-photo/tasty-butter-chicken-curry-dish-600w-1153329448.jpg', 'https://image.shutterstock.com/image-photo/hot-spicy-soup-chickpeas-onions-600w-1869258109.jpg'];
+let element_carousel = document.getElementById('carousel');
+element_carousel.setAttribute("src", 'https://image.shutterstock.com/image-photo/behrai-kabab1-600w-154637972.jpg');
