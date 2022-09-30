@@ -120,7 +120,7 @@ document.getElementById('add5').addEventListener('click', (event) => {
 var foodimgs;
 
 
-foodimgs = ['https://image.shutterstock.com/image-photo/behrai-kabab1-600w-154637972.jpg', 'https://image.shutterstock.com/image-photo/chicken-biryani-showing-leg-piece-600w-353098577.jpg', 'https://image.shutterstock.com/image-photo/samosa-on-plate-sauce-tomatoes-600w-255644446.jpg', 'https://image.shutterstock.com/image-photo/closeup-mince-paratha-600w-84751744.jpg', 'https://image.shutterstock.com/image-photo/tasty-butter-chicken-curry-dish-600w-1153329448.jpg', 'https://image.shutterstock.com/image-photo/hot-spicy-soup-chickpeas-onions-600w-1869258109.jpg'];
+foodimgs = ['https://image.shutterstock.com/image-photo/tasty-butter-chicken-curry-dish-600w-1153329448.jpg', 'https://image.shutterstock.com/image-photo/hot-spicy-soup-chickpeas-onions-600w-1869258109.jpg', 'https://image.shutterstock.com/image-photo/chicken-biryani-showing-leg-piece-600w-353098577.jpg', 'https://image.shutterstock.com/image-photo/samosa-on-plate-sauce-tomatoes-600w-255644446.jpg', 'https://image.shutterstock.com/image-photo/closeup-mince-paratha-600w-84751744.jpg', 'https://image.shutterstock.com/image-photo/behrai-kabab1-600w-154637972.jpg'];
 let element_carousel = document.getElementById('carousel');
 element_carousel.setAttribute("src", foodimgs[0]);
 
