@@ -69,51 +69,70 @@ prettify.toHTML(run(), console);
 */
 
 
+
+
+
+var price;
+
+
+
 document.getElementById('add1').addEventListener('click', (event) => {
   let element_cart = document.getElementById('cart');
   let new_li = document.createElement('li');
-  new_li.innerText = 'Bracelet';
- 
+  new_li.innerText = 'Bracelet £25';
+
   element_cart.appendChild(new_li);
- 
+  price.push(25);
+
 });
- 
+
 document.getElementById('add2').addEventListener('click', (event) => {
   let element_cart2 = document.getElementById('cart');
   let new_li2 = document.createElement('li');
-  new_li2.innerText = 'Earrings';
- 
+  new_li2.innerText = 'Earrings £20';
+
   element_cart2.appendChild(new_li2);
- 
+  price.push(20);
+
 });
- 
+
 document.getElementById('add3').addEventListener('click', (event) => {
   let element_cart3 = document.getElementById('cart');
   let new_li3 = document.createElement('li');
-  new_li3.innerText = 'Ring';
- 
+  new_li3.innerText = 'Rings £15';
+
   element_cart3.appendChild(new_li3);
- 
+  price.push(15);
+
 });
- 
+
 document.getElementById('add4').addEventListener('click', (event) => {
   let element_cart4 = document.getElementById('cart');
   let new_li4 = document.createElement('li');
-  new_li4.innerText = 'Necklace';
- 
+  new_li4.innerText = 'Necklace £25';
+
   element_cart4.appendChild(new_li4);
- 
+  price.push(25);
+
 });
- 
+
 document.getElementById('add5').addEventListener('click', (event) => {
   let element_cart5 = document.getElementById('cart');
   let new_li5 = document.createElement('li');
-  new_li5.innerText = 'Anklet';
- 
-  element_cart5.appendChild(new_li5);
- 
-});
+  new_li5.innerText = 'Anklet £20';
 
+  element_cart5.appendChild(new_li5);
+  price.unshift(20);
+
+});
+price = [];
+
+
+document.getElementById('total').addEventListener('click', (event) => {
+  let element_calc = document.getElementById('calc');
+  element_calc.innerText = price.reduce((a,b) => a+b, 0);
+
+});
 
 
 
